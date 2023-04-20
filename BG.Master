@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BG.master.cs" Inherits="AspMiniPrj.BG" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <link rel="cipher decipher icon" type="image/ico" href="Cipher Decipher_free-file.ico">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body background="BackgroundImage2">
+    <form id="form1" runat="server">
+    <div>
+        <asp:Panel ID="Panel1" runat="server" Height="181px" style="text-align: center">
+            <br />
+            <br />
+            <asp:Image ID="Image1" runat="server" Height="118px" ImageAlign="Middle" 
+                ImageUrl="~/Cipher Decipher_free-file.png" style="text-align: center" 
+                Width="139px" />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Caladea" 
+                Font-Size="40pt" ForeColor="#00B1F0" style="text-align: center" 
+                Text="Cipher &amp; Decipher" BackColor="#000066"></asp:Label>
+            &nbsp;<br />
+            <br />
+        </asp:Panel>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <p style="text-align: center">
+        <asp:LinkButton ID="LinkButton1" runat="server" BackColor="White" 
+            PostBackUrl="~/cu.aspx">Contact Us From Here</asp:LinkButton>
+    </p>
+    </form>
+</body>
+</html>
